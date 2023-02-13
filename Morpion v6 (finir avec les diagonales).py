@@ -37,7 +37,15 @@ while partie_continue:
                     print("Joueur vainqueur : ", joueur)
                     dessine(plateau)
                     partie_continue = False
-    if joueur == 1:
+                if plateau[0][0] == plateau[1][1] == plateau[2][2]:
+                    print("Joueur vainqueur : ", joueur)
+                    dessine(plateau)
+                    partie_continue = False
+                if plateau[0][2] == plateau[1][1] == plateau[2][0]:
+                    print("Joueur vainqueur : ", joueur)
+                    dessine(plateau)
+                    partie_continue = False        
+     if joueur == 1:
         joueur = 2
     else:
         joueur = 1
