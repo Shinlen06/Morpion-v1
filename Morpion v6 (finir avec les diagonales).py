@@ -28,23 +28,23 @@ while partie_continue:
         if c < 3 and l < 3:
             if plateau[l][c] == 0:
                 plateau[l][c] = joueur
-                if plateau[0][l] == plateau[1][l] == plateau[2][l] !=0:
-                    print(plateau[0][l],plateau[1][l],plateau[2][l])
+                if plateau[l][0] == plateau[l][1] == plateau[l][2] != 0:
                     print("Joueur vainqueur : ", joueur)
                     dessine(plateau)
                     partie_continue = False
-                if plateau[0][c] == plateau[1][c] == plateau[2][c] !=0:
+                if plateau[0][c] == plateau[1][c] == plateau[2][c] != 0:
                     print("Joueur vainqueur : ", joueur)
                     dessine(plateau)
                     partie_continue = False
-                if plateau[0][0] == plateau[1][1] == plateau[2][2] !=0:
+                if plateau[0][0] == plateau[1][1] == plateau[2][2] != 0:
                     print("Joueur vainqueur : ", joueur)
                     dessine(plateau)
                     partie_continue = False
-                if plateau[0][2] == plateau[1][1] == plateau[2][0] !=0:
+                if plateau[0][2] == plateau[1][1] == plateau[2][0] != 0:
                     print("Joueur vainqueur : ", joueur)
                     dessine(plateau)
                     partie_continue = False        
+                    
     if joueur == 1:
         joueur = 2
     else:
